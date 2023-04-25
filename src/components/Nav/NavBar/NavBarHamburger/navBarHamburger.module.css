@@ -1,0 +1,87 @@
+.NavBarHamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: var(--vp-nav-height);
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.container {
+    position: relative;
+    width: 16px;
+    height: 14px;
+    overflow: hidden;
+}
+
+.NavBarHamburger:hover .top {
+    top: 0;
+    left: 0;
+    transform: translate(4px);
+}
+
+.NavBarHamburger:hover .middle {
+    top: 6px;
+    left: 0;
+    transform: translate(0);
+}
+
+.NavBarHamburger:hover .bottom {
+    top: 12px;
+    left: 0;
+    transform: translate(8px);
+}
+
+.NavBarHamburger.active .top {
+    top: 6px;
+    transform: translate(0) rotate(225deg);
+}
+
+.NavBarHamburger.active .middle {
+    top: 6px;
+    transform: translate(16px);
+}
+
+.NavBarHamburger.active .bottom {
+    top: 6px;
+    transform: translate(0) rotate(135deg);
+}
+
+.NavBarHamburger.active:hover .top,
+.NavBarHamburger.active:hover .middle,
+.NavBarHamburger.active:hover .bottom {
+    left: 0;
+    background-color: var(--vp-c-text-2);
+    transition: top 250ms, background-color 500ms, transform 250ms
+}
+
+.top,
+.middle,
+.bottom {
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: var(--vp-c-text-1);
+    transition: top 250ms, background-color 500ms, transform 250ms
+}
+
+.top {
+    top: 0;
+    left: 0;
+    transform: translate(0)
+}
+
+.middle {
+    top: 6px;
+    left: 0;
+    transform: translate(8px)
+}
+
+.bottom {
+    top: 12px;
+    left: 0;
+    transform: translate(4px)
+}

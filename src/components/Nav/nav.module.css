@@ -1,0 +1,14 @@
+.Nav {
+    position: relative;
+    top: var(--vp-layout-top-height, 0px);
+    left: 0;
+    z-index: var(--vp-z-index-nav);
+    width: 100svw;
+    pointer-events: none;
+    transition: background-color 500ms;
+
+    @media (min-width: 960px) {
+        position: fixed;
+    }
+}
+

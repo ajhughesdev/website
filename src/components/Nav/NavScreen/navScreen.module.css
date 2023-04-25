@@ -1,0 +1,113 @@
+.NavScreen {
+  position: fixed;
+  top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 1px);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 32px;
+  width: 100%;
+  background-color: var(--vp-nav-screen-bg-color);
+  overflow-y: auto;
+  /* transition: background-color 0.5s; */
+  pointer-events: auto;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.NavScreen.fade-enter-active,
+.NavScreen.fade-leave-active {
+  transition: opacity 0.25s;
+}
+
+.NavScreen.fade-enter-active .container,
+.NavScreen.fade-leave-active .container {
+  transition: transform 0.25s ease;
+}
+
+.NavScreen.fade-enter-from,
+.NavScreen.fade-leave-to {
+  opacity: 0;
+}
+
+.NavScreen.fade-enter-from .container,
+.NavScreen.fade-leave-to .container {
+  transform: translateY(-8px);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 24px 0 96px;
+  max-width: 288px;
+}
+
+.NavScreenMenuLink {
+  display: block;
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding: 12px 0 11px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-text-1);
+  transition: border-color 0.25s, color 0.25s;
+}
+
+.NavScreenMenuLink:hover {
+  color: var(--vp-c-brand);
+}
+
+.appearance {
+  margin-top: 24px;
+}
+
+.social-links {
+  margin-block-start: 16px;
+}
+
+.NavScreenAppearance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 12px 14px 12px 16px;
+  background-color: var(--vp-c-bg-soft);
+}
+
+.text {
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+}
+
+.SocialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.SocialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: var(--vp-c-text-2);
+  /* transition: color 500ms; */
+}
+
+.SocialLink:hover {
+  color: var(--vp-c-text-1);
+  transition: color 250ms;
+}
+
+.SocialLink > svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.SwitchAppearance.dark .check {
+  transform: translateX(100%);
+}

@@ -1,0 +1,64 @@
+.NavBar {
+  position: relative;
+  border-block-end: 1px solid transparent;
+  padding: 0 8px 0 24px;
+  height: var(--vp-nav-height);
+  transition: border-color 500ms, background-color 500ms;
+  pointer-events: none;
+
+  @media (min-width: 768px) {
+    padding: 0 32px;
+  }
+}
+@media (min-width: 960px) {
+  .NavBar.fill {
+    border-bottom-color: var(--vp-c-gutter);
+    background-color: var(--vp-nav-bg-color);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: calc(var(--vp-layout-max-width) - 64px);
+  height: var(--vp-nav-height);
+  pointer-events: none;
+}
+
+.container * {
+  pointer-events: auto;
+}
+
+.title {
+  flex-shrink: 0;
+  height: calc(var(--vp-nav-height) - 1px);
+  transition: background-color 500ms;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.content-body {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* max-width: 671px; */
+  height: calc(var(--vp-nav-height)- 1px);
+  transition: background-color 500ms;
+}
+
+.content-body:last-child {
+  position: relative;
+  right: 0;
+}
+
+
+
+@media (min-width: 960px) {
+  .NavBar.fill .content-body {
+    background-color: var(--vp-nav-bg-color);
+  }
+}
+
