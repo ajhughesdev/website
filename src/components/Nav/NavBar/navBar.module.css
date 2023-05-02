@@ -57,8 +57,10 @@
 
 
 @media (min-width: 960px) {
-  .NavBar.fill .content-body {
+  
+  .NavBar.fill {
     background-color: var(--vp-nav-bg-color);
+    
   }
 }
 

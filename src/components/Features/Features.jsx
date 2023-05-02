@@ -4,40 +4,40 @@ const features = [
   {
     id: 0,
     icon: '💡',
-    title: 'Instant Server Start',
-    details: 'On demand file serving over native ESM, no bundling required!',
+    title: 'Customizable Designs',
+    details: 'Customized frontend web development solutions tailored to your needs.',
   },
   {
     id: 1,
     icon: '⚡️',
-    title: 'Lightning Fast HMR',
+    title: 'Responsive Layouts',
     details:
-      'Hot Module Replacement (HMR) that stays fast regardless of app size.',
+      'Advanced techniques and tools to create responsive and dynamic designs.',
   },
   {
     id: 2,
     icon: '🛠️',
-    title: 'Rich Features',
-    details: 'Out-of-the-box support for TypeScript, JSX, CSS and more.',
+    title: 'SEO Optimization',
+    details: 'SEO optimization to improve visibility and traffic to your website.',
   },
   {
     id: 3,
     icon: '📦',
-    title: 'Optimized Build',
+    title: 'Cross-Browser Compatibility',
     details:
-      'Pre-configured Rollup build with multi-page and library mode support.',
+      'Cross-browser compatibility to ensure your site looks great on any device.',
   },
   {
     id: 4,
     icon: '🔩',
-    title: 'Universal Plugins',
-    details: 'Rollup-superset plugin interface shared between dev and build.',
+    title: 'Fast Load Times',
+    details: 'Fast load times for a seamless user experience.',
   },
   {
     id: 5,
     icon: '🔑',
-    title: 'Fully Typed APIs',
-    details: 'Flexible programmatic APIs with full TypeScript typing.',
+    title: 'Expert Support',
+    details: 'Expert support available 24/7 to answer any questions or solve any issues.',
   },
 ]
 

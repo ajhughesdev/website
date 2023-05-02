@@ -86,7 +86,7 @@
     border: 1px solid var(--vp-c-divider);
     background-color: var(--vp-c-bg-elv);
     box-shadow: var(--vp-shadow-3);
-    /* transition: background-color 500ms; */
+    transition: background-color 500ms;
     max-height: calc(100svh - var(--vp-nav-height));
     overflow-y: auto;
 }
@@ -121,7 +121,7 @@
     font-size: 12px;
     font-weight: 500;
     color: var(--vp-c-text-2);
-    /* transition: color 500ms; */
+    transition: color 500ms;
 }
 
 .appearance-action {
@@ -152,7 +152,7 @@
     width: 36px;
     height: 36px;
     color: var(--vp-c-text-2);
-    /* transition: color 500ms; */
+    transition: color 500ms;
 }
 
 .SocialLink:hover {

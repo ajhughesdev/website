@@ -549,6 +549,57 @@ vite-error-overlay {
   z-index: 9999
 }
 
+.Layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+.SkipLink {
+  top: 8px;
+  left: 8px;
+  padding: 8px 16px;
+  z-index: 999;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--vp-c-brand);
+  background-color: var(--vp-c-bg);
+
+  &:focus {
+    height: auto;
+    width: auto;
+    clip: auto;
+    clip-path: none;
+  }
+
+  @media (min-width: 1280px) {
+    top: 14px;
+    left: 16px;
+  }
+}
+
+.dark .SkipLink {
+  color: var(--vp-c-green);
+}
+
+.Content.is-home {
+  width: 100%;
+  max-width: 100%;
+}
+
+.Content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: var(--vp-layout-top-height, 0px) auto 0;
+  width: 100%;
+
+  @media (min-width: 960px) {
+    padding-top: var(--vp-nav-height);
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
