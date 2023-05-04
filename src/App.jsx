@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio'
 import Project from './pages/Portfolio/Project'
 import Resume from './pages/Resume'
 import Contact from './pages/Contact'
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 const App = () => {
   const prefersDarkMode = window.matchMedia(
@@ -47,6 +48,7 @@ const App = () => {
         <Route path='portfolio/:id' element={<Project />} />
         <Route path='resume' element={<Resume darkMode={darkMode} />} />
         <Route path='contact' element={<Contact />} />
+        <Route path='privacy-policy' element={<PrivacyPolicy />} />
       </Route>
     </Routes>
   )
