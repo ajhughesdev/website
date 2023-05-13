@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "rm -rf /var/www/ajhughes.dev/html/assets /var/www/ajhughes.dev/html/portfolio /var/www/ajhughes.dev/html/index.html; vite build; mv dist/assets /var/www/ajhughes.dev/html; mv dist/* /var/www/ajhughes.dev/html; rm -rf dist",
     "preview": "vite preview"
   },
   "dependencies": {
