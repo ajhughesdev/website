@@ -15,7 +15,7 @@ const RootLayout = ({ darkMode, toggleDarkMode }) => {
   const toggleNavScreen = () => setNavScreenVisible(!navScreenVisible)
 
   return (
-    <div className={`Layout ${navScreenVisible ? 'no-overscroll' : 'overscroll'}`}>
+    <div className={`Layout ${navScreenVisible ? 'no-overscroll' : ''}`}>
       <span ref={ref}></span>
       <span tabIndex='-1'></span>
       <a href='#Content' className='SkipLink visually-hidden'>
