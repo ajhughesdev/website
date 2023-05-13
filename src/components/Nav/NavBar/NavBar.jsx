@@ -27,7 +27,6 @@ const NavBar = ({
           <div className={css.content}>
             <div className={css.curtain}></div>
             <div className={css['content-body']}>
-
               <NavBarMenu />
               <NavBarAppearance
                 darkMode={darkMode}

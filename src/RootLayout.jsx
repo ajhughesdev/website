@@ -15,7 +15,7 @@ const RootLayout = ({ darkMode, toggleDarkMode }) => {
   const toggleNavScreen = () => setNavScreenVisible(!navScreenVisible)
 
   return (
-    <div className={`Layout ${navScreenVisible ? 'no-overscroll' : ''}`}>
+    <div className={`Layout ${navScreenVisible ? 'no-overscroll' : 'overscroll'}`}>
       <span ref={ref}></span>
       <span tabIndex='-1'></span>
       <a href='#Content' className='SkipLink visually-hidden'>
@@ -31,12 +31,34 @@ const RootLayout = ({ darkMode, toggleDarkMode }) => {
       <div className={`Content ${isHome ? 'is-home' : ''}`} id='Content'>
         <Outlet />
       </div>
-      <AdSense.Google
-        client='ca-pub-7566894593607519'
-        slot='4080392724'
-        style={{ display: 'inline-block', width: '728px', height: '90px', margin: '1rem auto' }}
-        format=''
-      />
+      {window.matchMedia('max-width: 767px').matches && (
+        <AdSense.Google
+          key={Math.random()}
+          client='ca-pub-7566894593607519'
+          slot='8471397015'
+          style={{
+            display: 'inline-block',
+            width: '300px',
+            height: '250px',
+            margin: '1rem auto',
+          }}
+          format=''
+        />
+      )}
+      {window.matchMedia('min-width: 768px').matches && (
+        <AdSense.Google
+          key={Math.random()}
+          client='ca-pub-7566894593607519'
+          slot='4080392724'
+          style={{
+            display: 'inline-block',
+            width: '728px',
+            height: '90px',
+            margin: '1rem auto',
+          }}
+          format=''
+        />
+      )}
       <Footer />
     </div>
   )

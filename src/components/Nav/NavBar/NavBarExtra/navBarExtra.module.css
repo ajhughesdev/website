@@ -3,12 +3,12 @@
 }
 
 .Flyout:hover {
-    color: var(--vp-c-brand);
+    color: var(--c-brand);
     transition: color 250ms;
 }
 
 .Flyout:hover .icon {
-    fill: var(--vp-c-text-2);
+    fill: var(--c-text-2);
 }
 
 .Flyout:hover .menu,
@@ -35,8 +35,8 @@
     display: flex;
     align-items: center;
     padding: 0 12px;
-    height: var(--vp-nav-height);
-    color: var(--vp-c-text-1);
+    height: var(--nav-height);
+    color: var(--c-text-1);
     transition: 500ms;
 }
 
@@ -49,7 +49,7 @@
 
 .menu {
     position: absolute;
-    top: calc(var(--vp-nav-height) / 2 + 20px);
+    top: calc(var(--nav-height) / 2 + 20px);
     right: 0;
     opacity: 0;
     visibility: hidden;
@@ -63,7 +63,7 @@
     margin-inline-start: 8px;
     width: 1px;
     height: 24px;
-    background-color: var(--vp-c-divider);
+    background-color: var(--c-divider);
     content: '';
 }
 
@@ -83,11 +83,11 @@
     border-radius: 12px;
     padding: 12px;
     min-width: 128px;
-    border: 1px solid var(--vp-c-divider);
-    background-color: var(--vp-c-bg-elv);
-    box-shadow: var(--vp-shadow-3);
+    border: 1px solid var(--c-divider);
+    background-color: var(--c-bg-elv);
+    box-shadow: var(--shadow-3);
     transition: background-color 500ms;
-    max-height: calc(100svh - var(--vp-nav-height));
+    max-height: calc(100svh - var(--nav-height));
     overflow-y: auto;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .Menu .group + .group {
-    border-top: 1px solid var(--vp-c-divider);
+    border-top: 1px solid var(--c-divider);
     padding: 11px 12px 12px;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .Menu .group + .item {
-    border-top: 1px solid var(--vp-c-divider);
+    border-top: 1px solid var(--c-divider);
     padding: 11px 16px 0;
 }
 
@@ -120,7 +120,7 @@
     line-height: 28px;
     font-size: 12px;
     font-weight: 500;
-    color: var(--vp-c-text-2);
+    color: var(--c-text-2);
     transition: color 500ms;
 }
 
@@ -151,12 +151,12 @@
     justify-content: center;
     width: 36px;
     height: 36px;
-    color: var(--vp-c-text-2);
+    color: var(--c-text-2);
     transition: color 500ms;
 }
 
 .SocialLink:hover {
-    color: var(--vp-c-text-1);
+    color: var(--c-text-1);
     transition: color 250ms;
 }
 

@@ -6,20 +6,20 @@
   line-height: 1.5;
 
   & h1 {
-    color: var(--vp-c-text-1);
+    color: var(--c-text-1);
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 1rem;
   }
 
   & h2 {
-    color: var(--vp-c-text-1);
+    color: var(--c-text-1);
     font-weight: 700;
     margin-bottom: 1rem;
   }
 
   & p {
-    color: var(--vp-c-text-2);
+    color: var(--c-text-2);
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -37,7 +37,7 @@
   }
 
   & a {
-    color: var(--vp-c-primary);
+    color: var(--c-primary);
     text-decoration: none;
 
     &:hover {

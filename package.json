@@ -27,5 +27,10 @@
     "@vitejs/plugin-react": "^3.1.0",
     "react-adsense": "^0.1.0",
     "vite": "^4.2.0"
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "> 0.2%"
+  ]
 }

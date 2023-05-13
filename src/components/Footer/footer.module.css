@@ -1,9 +1,9 @@
 .Footer {
     position: relative;
-    z-index: var(--vp-z-index-footer);
-    border-top: 1px solid var(--vp-c-gutter);
+    z-index: var(--z-index-footer);
+    border-top: 1px solid var(--c-gutter);
     padding: 32px 24px;
-    background-color: var(--vp-c-bg);
+    background-color: var(--c-bg);
 
     @media (min-width: 768px) {
         padding: 32px;
@@ -12,7 +12,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: var(--vp-layout-max-width);
+    max-width: var(--layout-max-width);
     text-align: center;
 }
 
@@ -25,6 +25,6 @@
     line-height: 24px;
     font-size: 14px;
     font-weight: 500;
-    color: var(--vp-c-text-2);
+    color: var(--c-text-2);
 }
 

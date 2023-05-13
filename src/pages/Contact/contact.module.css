@@ -7,13 +7,13 @@
   padding: 1rem;
 
   & input {
-    background-color: var(--vp-c-bg-soft-mute);
+    background-color: var(--c-bg-soft-mute);
     padding: 1rem;
     border-radius: 5px;
   }
 
   & textarea {
-    background-color: var(--vp-c-bg-soft-mute);
+    background-color: var(--c-bg-soft-mute);
     padding: 1rem;
     border-radius: 5px;
   }
@@ -21,7 +21,7 @@
   & input[type="submit"] {
     margin-top: 1rem;
     padding: 1rem;
-    background-color: var(--vp-c-brand);
+    background-color: var(--c-brand);
     color: white;
     text-transform: uppercase;
     font-weight: 700;
@@ -31,7 +31,7 @@
     cursor: pointer;
 
     &:hover {
-      background-color: var(--vp-c-brand-light);
+      background-color: var(--c-brand-light);
     }
   }
 
@@ -39,7 +39,7 @@
     margin-top: 1rem;
     align-self: flex-start;
     font-size: 1rem;
-    color: var(--vp-c-text-2);
+    color: var(--c-text-2);
     font-weight: 700;
     text-transform: uppercase;
   }

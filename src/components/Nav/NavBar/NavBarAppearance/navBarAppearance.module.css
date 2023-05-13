@@ -3,7 +3,7 @@
   margin-inline-start: 8px;
   width: 1px;
   height: 24px;
-  background-color: var(--vp-c-divider);
+  background-color: var(--c-divider);
   content: '';
 }
 
@@ -23,12 +23,12 @@
   width: 40px;
   height: 22px;
   flex-shrink: 0;
-  border: 1px solid var(--vp-input-border-color);
-  background-color: var(--vp-input-switch-bg-color);
+  border: 1px solid var(--input-border-color);
+  background-color: var(--input-switch-bg-color);
   transition: border-color 250ms;
 
   &:hover {
-    border-color: var(--vp-input-hover-border-color);
+    border-color: var(--input-hover-border-color);
   }
 }
 
@@ -39,8 +39,8 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: var(--vp-c-neutral-inverse);
-  box-shadow: var(--vp-shadow-1);
+  background-color: var(--c-neutral-inverse);
+  box-shadow: var(--shadow-1);
   transition: transform 250ms;
 }
 
@@ -59,11 +59,11 @@
   left: 3px;
   width: 12px;
   height: 12px;
-  fill: var(--vp-c-text-2);
+  fill: var(--c-text-2);
 }
 
 .dark .icon svg {
-  fill: var(--vp-c-text-1);
+  fill: var(--c-text-1);
   transition: opacity 250ms;
 }
 

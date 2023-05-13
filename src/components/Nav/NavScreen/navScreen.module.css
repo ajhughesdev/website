@@ -1,14 +1,14 @@
 .NavScreen {
   position: fixed;
-  top: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 1px);
+  top: calc(var(--nav-height) + var(--layout-top-height, 0px) + 1px);
   right: 0;
   bottom: 0;
   left: 0;
   padding: 0 32px;
   width: 100%;
-  background-color: var(--vp-nav-screen-bg-color);
+  background-color: var(--nav-screen-bg-color);
   overflow-y: auto;
-  /* transition: background-color 0.5s; */
+  transition: background-color 500ms;
   pointer-events: auto;
 
   @media (min-width: 768px) {
@@ -16,7 +16,7 @@
   }
 }
 
-.NavScreen.fade-enter-active,
+/* .NavScreen.fade-enter-active,
 .NavScreen.fade-leave-active {
   transition: opacity 0.25s;
 }
@@ -34,7 +34,7 @@
 .NavScreen.fade-enter-from .container,
 .NavScreen.fade-leave-to .container {
   transform: translateY(-8px);
-}
+} */
 
 .container {
   margin: 0 auto;
@@ -44,17 +44,17 @@
 
 .NavScreenMenuLink {
   display: block;
-  border-bottom: 1px solid var(--vp-c-divider);
+  border-bottom: 1px solid var(--c-divider);
   padding: 12px 0 11px;
   line-height: 24px;
   font-size: 14px;
   font-weight: 500;
-  color: var(--vp-c-text-1);
+  color: var(--c-text-1);
   transition: border-color 0.25s, color 0.25s;
 }
 
 .NavScreenMenuLink:hover {
-  color: var(--vp-c-brand);
+  color: var(--c-brand);
 }
 
 .appearance {
@@ -71,14 +71,14 @@
   align-items: center;
   border-radius: 8px;
   padding: 12px 14px 12px 16px;
-  background-color: var(--vp-c-bg-soft);
+  background-color: var(--c-bg-soft);
 }
 
 .text {
   line-height: 24px;
   font-size: 12px;
   font-weight: 500;
-  color: var(--vp-c-text-2);
+  color: var(--c-text-2);
 }
 
 .SocialLinks {
@@ -93,12 +93,12 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  color: var(--vp-c-text-2);
-  /* transition: color 500ms; */
+  color: var(--c-text-2);
+  transition: color 500ms;
 }
 
 .SocialLink:hover {
-  color: var(--vp-c-text-1);
+  color: var(--c-text-1);
   transition: color 250ms;
 }
 

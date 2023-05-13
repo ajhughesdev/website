@@ -7,15 +7,15 @@
 }
 
 .Hero {
-  margin-top: calc((var(--vp-nav-height) + var(--vp-layout-top-height, 0px)) * -1);
-  padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 48px) 24px 48px;
+  margin-top: calc((var(--nav-height) + var(--layout-top-height, 0px)) * -1);
+  padding: calc(var(--nav-height) + var(--layout-top-height, 0px) + 48px) 24px 48px;
 
   @media (min-width: 640px) {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 48px 64px;
+    padding: calc(var(--nav-height) + var(--layout-top-height, 0px) + 80px) 48px 64px;
   }
 
   @media (min-width: 960px) {
-    padding: calc(var(--vp-nav-height) + var(--vp-layout-top-height, 0px) + 80px) 64px 64px;
+    padding: calc(var(--nav-height) + var(--layout-top-height, 0px) + 80px) 64px 64px;
   }
 }
 
@@ -63,7 +63,7 @@
 }
 
 .name {
-  color: var(--vp-home-hero-name-color);
+  color: var(--home-hero-name-color);
 }
 
 .name, .text {
@@ -92,10 +92,10 @@
 }
 
 .clip {
-  background: var(--vp-home-hero-name-background);
+  background: var(--home-hero-name-background);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: var(--vp-home-hero-name-color);
+  -webkit-text-fill-color: var(--home-hero-name-color);
 }
 
 .Hero.has-image .tagline {
@@ -113,7 +113,7 @@
   font-size: 18px;
   font-weight: 500;
   white-space: pre-wrap;
-  color: var(--vp-c-text-2);
+  color: var(--c-text-2);
 
   @media (min-width: 640px) {
     padding-top: 12px;
@@ -153,21 +153,21 @@
 }
 
 .Button.brand {
-  border-color: var(--vp-button-brand-border);
-  color: var(--vp-button-brand-text);
-  background-color: var(--vp-button-brand-bg); 
+  border-color: var(--button-brand-border);
+  color: var(--button-brand-text);
+  background-color: var(--button-brand-bg); 
 }
 
 .Button.brand:hover {
-  border-color: var(--vp-button-brand-hover-border);
-  color: var(--vp-button-brand-hover-text);
-  background-color: var(--vp-button-brand-hover-bg);
+  border-color: var(--button-brand-hover-border);
+  color: var(--button-brand-hover-text);
+  background-color: var(--button-brand-hover-bg);
 }
 
 .Button.brand:active {
-  border-color: var(--vp-button-brand-active-border);
-  color: var(--vp-button-brand-active-text);
-  background-color: var(--vp-button-brand-active-bg);
+  border-color: var(--button-brand-active-border);
+  color: var(--button-brand-active-text);
+  background-color: var(--button-brand-active-bg);
 }
 
 .Button.medium {
@@ -187,21 +187,21 @@
 }
 
 .Button.alt {
-  border-color: var(--vp-button-alt-border);
-  color: var(--vp-button-alt-text);
-  background-color: var(--vp-button-alt-bg);
+  border-color: var(--button-alt-border);
+  color: var(--button-alt-text);
+  background-color: var(--button-alt-bg);
 }
 
 .Button.alt:hover {
-  border-color: var(--vp-button-alt-hover-border);
-  color: var(--vp-button-alt-hover-text);
-  background-color: var(--vp-button-alt-hover-bg);
+  border-color: var(--button-alt-hover-border);
+  color: var(--button-alt-hover-text);
+  background-color: var(--button-alt-hover-bg);
 }
 
 .Button.alt:active {
-  border-color: var(--vp-button-alt-active-border);
-  color: var(--vp-button-alt-active-text);
-  background-color: var(--vp-button-alt-active-bg);
+  border-color: var(--button-alt-active-border);
+  color: var(--button-alt-active-text);
+  background-color: var(--button-alt-active-bg);
 }
 
 .image {
@@ -248,8 +248,8 @@
   border-radius: 50%;
   width: 192px;
   height: 192px;
-  background-image: var(--vp-home-hero-image-background-image);
-  filter: var(--vp-home-hero-image-filter);
+  background-image: var(--home-hero-image-background-image);
+  filter: var(--home-hero-image-filter);
   transform: translate(-50%, -50%);
   
   @media (min-width: 640px) {

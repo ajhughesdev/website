@@ -45,10 +45,10 @@
 
 .Feature {
     display: block;
-    border: 1px solid var(--vp-c-bg-soft);
+    border: 1px solid var(--c-bg-soft);
     border-radius: 12px;
     height: 100%;
-    background-color: var(--vp-c-bg-soft);
+    background-color: var(--c-bg-soft);
     transition: border-color 250ms, background-color 250ms;
 }
 
@@ -65,7 +65,7 @@
     align-items: center;
     margin-block-end: 20px;
     border-radius: 6px;
-    background-color: var(--vp-c-bg-soft-down);
+    background-color: var(--c-bg-soft-down);
     width: 48px;
     height: 48px;
     font-size: 24px;
@@ -84,5 +84,5 @@
     line-height: 24px;
     font-size: 14px;
     font-weight: 500;
-    color: var(--vp-c-text-2);
+    color: var(--c-text-2);
 }
