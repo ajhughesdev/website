@@ -12,6 +12,7 @@ export const SwitchAppearance = ({ darkMode, toggleDarkMode }) => {
         }`}
         type='button'
         role='switch'
+        aria-label='toggle dark mode'
         aria-checked={darkMode ? 'true' : 'false'}
         onClick={toggleDarkMode}
       >

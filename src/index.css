@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Raleway';
-  src: url('./../../assets/font/raleway/Raleway-VariableFont_wght.woff2')
+  src: url('./assets/font/raleway/Raleway-VariableFont_wght.woff2')
     format('woff2-variations');
   font-style: normal;
   font-weight: 100 900;
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./../../assets/font/open-sans/OpenSans-VariableFont_wdth,wght.woff2')
+  src: url('./assets/font/open-sans/OpenSans-VariableFont_wdth,wght.woff2')
     format('woff2-variations');
   font-style: normal;
   font-weight: 300 800;
@@ -52,6 +52,10 @@
   --c-white: #ffffff;
   --c-black: #000000;
   --c-gray: #8e8e93;
+  --copyright-light: rgb(118, 118, 123);
+  --copyright-dark: ##ebebf599;
+  --details-color-light: #3a3a3b;
+  --details-color-dark: rgba(235, 235, 245, 0.6);
   --c-text-light-1: rgba(60, 60, 67, 0.92);
   --c-text-light-2: rgba(60, 60, 67, 0.7);
   --c-text-light-3: rgba(60, 60, 67, 0.33);
@@ -86,6 +90,8 @@
 }
 
 :root {
+  --details-color: var(--details-color-light);
+  --copyright: var(--copyright-light);
   --c-bg: #ffffff;
   --c-bg-elv: #ffffff;
   --c-bg-elv-up: #ffffff;
@@ -121,6 +127,8 @@
 }
 
 .dark {
+  --details-color: var(--details-color-dark);
+  --copyright: var(--copyright-dark);
   --c-bg: #1e1e20;
   --c-bg-elv: #252529;
   --c-bg-elv-up: #313136;

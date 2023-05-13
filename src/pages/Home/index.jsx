@@ -26,14 +26,6 @@ const Home = () => {
                   Latest Projects
                 </Link>
               </div>
-              {/* <div className={css.action}>
-                <Link
-                  className={`${css.Button} ${css.medium} ${css.alt}`}
-                  to='/about/'
-                >
-                  About Andrew
-                </Link>
-              </div> */}
               <div className={css.action}>
                 <a
                   className={`${css.Button} ${css.medium} ${css.alt}`}
@@ -54,7 +46,6 @@ const Home = () => {
                 alt='avatar'
                 className={`${css.Image} ${css['img-src']}`}
               />
-              {/* <Avatar className={`${css.Image} ${css['img-src']} `} /> */}
             </div>
           </div>
         </div>
