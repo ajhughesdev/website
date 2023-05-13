@@ -1,22 +1,3 @@
-@font-face {
-  font-family: 'Raleway';
-  src: url('./../../assets/font/raleway/Raleway-VariableFont_wght.ttf')
-    format('truetype-variations');
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: optional;
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  src: url('./../../assets/font/open-sans/OpenSans-VariableFont_wdth,wght.ttf')
-    format('truetype-variations');
-  font-style: normal;
-  font-weight: 300 800;
-  font-stretch: 75% 100%;
-  font-display: optional;
-}
-
 .Resume {
   font-size: 16px;
   height: 100%;
@@ -24,7 +5,7 @@
   color: var(--c-text-dark-1);
   background-color: var(--c-bg);
   display: flex;
-  padding: 1.25rem;
+  /* padding: 1.25rem; */
 
   @media (min-width: 768px) {
     display: grid;
@@ -35,8 +16,9 @@
   & .body {
     display: flex;
     flex-direction: column;
-    background-color: var(--c-bg-elv-up);
+    background-color: var(--c-bg-elv-down);
     padding-inline: 1rem;
+    padding-block-end: 1rem;
     width: 100%;
     max-width: 400px;
     margin-inline: auto;
@@ -44,7 +26,7 @@
 
     @media (min-width: 768px) {
       max-width: 700px;
-      height: 850px;
+      height: 100%;
       background: -webkit-gradient(
         linear,
         left top,
@@ -60,7 +42,7 @@
     & h3,
     & h4 {
       color: var(--c-text-1);
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Raleway', 'Raleway-fallback', sans-serif;
       margin: 0;
 
       @media (min-width: 768px) {
@@ -141,7 +123,7 @@
 
     & p,
     & li {
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Open Sans', 'Open Sans-fallback', sans-serif;
       font-size: 0.75rem;
       color: var(--c-text-2);
       font-weight: 500;
@@ -238,7 +220,6 @@
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
-      flex-direction: column;
       gap: 0.75rem;
       line-height: 1.25;
 
@@ -288,7 +269,7 @@
     & .cat-title {
       font-size: 0.75rem;
       font-weight: 900;
-      
+
       @media (min-width: 768px) {
         font-size: 0.65rem;
       }
@@ -314,9 +295,8 @@
     flex-direction: column;
 
     & li {
-      
       @media (min-width: 768px) {
-        font-size: 0.55rem;
+        /* font-size: 0.55rem; */
       }
     }
   }
@@ -335,7 +315,7 @@
     padding-block-end: 2rem;
 
     @media (min-width: 768px) {
-      padding-block-end: revert;
+      padding-block-end: 0;
     }
   }
 
@@ -357,7 +337,7 @@
     line-height: 1.2;
     padding-block-start: 0.35rem;
     -webkit-padding-before: 0.45rem;
-    
+
     @media (min-width: 768px) {
       font-size: 0.65rem;
     }
@@ -394,7 +374,7 @@
     translate: 0 2px;
 
     @media (min-width: 768px) {
-      height: 10px;
+      height: 11px;
       translate: revert;
     }
   }
