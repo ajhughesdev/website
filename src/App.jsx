@@ -4,9 +4,10 @@ import { Route, Routes } from 'react-router-dom'
 import RootLayout from './RootLayout'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
-import Project from './pages/Portfolio/Project'
+// import Project from './pages/Portfolio/Project'
 import Resume from './pages/Resume'
 import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 
 const App = () => {
@@ -45,9 +46,10 @@ const App = () => {
       >
         <Route index element={<Home />} />
         <Route path='portfolio' element={<Portfolio />} />
-        <Route path='portfolio/:id' element={<Project />} />
+        {/* <Route path='portfolio/:id' element={<Project />} /> */}
         <Route path='resume' element={<Resume darkMode={darkMode} />} />
         <Route path='contact' element={<Contact />} />
+        <Route path='*' element={<NotFound />} />
         <Route path='privacy-policy' element={<PrivacyPolicy />} />
       </Route>
     </Routes>

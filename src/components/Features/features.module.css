@@ -1,88 +1,87 @@
 .Features {
-    padding: 0 24px;
+  padding: 0 24px;
 
-    @media (min-width: 640px) {
-        padding: 0 48px;
-    }
+  @media (min-width: 640px) {
+    padding: 0 48px;
+  }
 
-    @media (min-width: 960px) {
-        padding: 0 64px;
-    }
+  @media (min-width: 960px) {
+    padding: 0 64px;
+  }
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 1152px;
+  margin: 0 auto;
+  max-width: 1152px;
 }
 
 .items {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -8px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
 }
 
 .item {
-    padding: 8px;
-    width: 100%;
+  padding: 8px;
+  width: 100%;
 }
 
 @media (min-width: 640px) {
-
-    .item.grid-2,
-    .item.grid-4,
-    .item.grid-6 {
-        width: 50%;
-    }
+  .item.grid-2,
+  .item.grid-4,
+  .item.grid-6 {
+    width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
-
-    .item.grid-3,
-    .item.grid-6 {
-        width: calc(100% / 3);
-    }
+  .item.grid-3,
+  .item.grid-6 {
+    width: calc(100% / 3);
+  }
 }
 
 .Feature {
-    display: block;
-    border: 1px solid var(--c-bg-soft);
-    border-radius: 12px;
-    height: 100%;
-    background-color: var(--c-bg-soft);
-    transition: border-color 250ms, background-color 250ms;
+  display: block;
+  border: 1px solid var(--c-bg-soft);
+  border-radius: 12px;
+  height: 100%;
+  background-color: var(--c-bg-soft);
+  transition: border-color 250ms, background-color 250ms;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  height: 100%;
 }
 
 .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-block-end: 20px;
-    border-radius: 6px;
-    background-color: var(--c-bg-soft-down);
-    width: 48px;
-    height: 48px;
-    font-size: 24px;
-    transition: background-color 250ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 20px;
+  border-radius: 6px;
+  background-color: var(--c-bg-soft-down);
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  transition: background-color 250ms;
 }
 
 .title {
-    line-height: 24px;
-    font-size: 16px;
-    font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .details {
-    flex-grow: 1;
-    padding-top: 8px;
-    line-height: 24px;
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--details-color);
+  flex-grow: 1;
+  padding-top: 8px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--details-color);
 }
+
