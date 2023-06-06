@@ -234,3 +234,25 @@
   height: 16px;
   fill: currentColor;
 }
+
+.search-input {
+  position: relative;
+  border-style: none;
+  border: none;
+  display: block;
+  flex: 1 1 auto;
+  margin: 5px;
+  min-height: 100%;
+  font-size: 14px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+  margin-inline: auto;
+  margin-block-end: 20px;
+}

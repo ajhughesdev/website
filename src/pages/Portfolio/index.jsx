@@ -1,11 +1,30 @@
-import { projects } from './projects'
+import { useState } from 'react'
+
+import { projects } from './projects.js'
 import { ReactComponent as GitHub } from './../../assets/imgs/github-icon.svg'
 import { ReactComponent as Demo } from './../../assets/imgs/globe.svg'
+
 import css from './portfolio.module.css'
-// import TagFilter from '../../assets/imgs/TagFilter/TagFilter'
+
+const tagMap = {
+  'javascript': 'js'
+}
 
 const Portfolio = () => {
-  const projectsList = projects.map((project) => (
+  const [searchTerm, setSearchTerm] = useState('')
+
+  const handleSearchChange = e => {
+    setSearchTerm(e.target.value)
+  }
+
+  const normalizeSearchTerm = term => {
+    return tagMap[term.toLowerCase()] || term
+  }
+
+  const filteredProjects = projects.filter(project => project.tags.some(tag => tag.toLowerCase().includes(normalizeSearchTerm(searchTerm).toLowerCase())))
+
+
+  const projectsList = filteredProjects.map(project => (
     <li className={css.item} key={project.id}>
       <article className={`${css.ProjectItem} ${css.medium}`}>
         <div className={css.profile}>
@@ -84,7 +103,9 @@ const Portfolio = () => {
                 skills and experience.
               </p>
             </div>
-            {/* <TagFilter /> */}
+            <span className={css['input-wrapper']}>
+              <input className={css['search-input']} type="text" placeholder="Search by category..." value={searchTerm} onChange={handleSearchChange} />
+            </span>
             <div className={`${css.Projects} ${css.medium} ${css['count-12']}`}>
               <ul className={css.container}>{projectsList}</ul>
             </div>
