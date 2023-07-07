@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { useInView } from 'framer-motion'
+// import { Adsense } from '@ctrl/react-adsense'
 
-import AdSense from './components/AdSense'
 import Nav from './components/Nav/Nav'
 import Footer from './components/Footer/Footer'
 
@@ -31,17 +31,12 @@ const RootLayout = ({ darkMode, toggleDarkMode }) => {
       <div className={`Content ${isHome ? 'is-home' : ''}`} id='Content'>
         <Outlet />
       </div>
-      {window.matchMedia('max-width: 767px').matches ? (
-        <AdSense
-          slot='8471397015'
-          googleAdId='ca-pub-7566894593607519'
-        />
-      ) : (
-        <AdSense
-          slot='4080392724'
-          googleAdId='ca-pub-7566894593607519'
-        />
-      )}
+      {/* <Adsense
+        className='ad_unit'
+        client='ca-pub-7566894593607519'
+        slot='1087443004'
+        format='auto'
+      /> */}
       <Footer />
     </div>
   )
