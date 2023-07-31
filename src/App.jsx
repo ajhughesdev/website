@@ -8,6 +8,7 @@ import Resume from './pages/Resume'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import About from './pages/About/About'
 
 const App = () => {
   const prefersDarkMode = window.matchMedia(
@@ -47,6 +48,7 @@ const App = () => {
         <Route path='portfolio' element={<Portfolio />} />
         <Route path='resume' element={<Resume darkMode={darkMode} />} />
         <Route path='contact' element={<Contact />} />
+        <Route path='about' element={<About />} />
         <Route path='*' element={<NotFound />} />
         <Route path='privacy-policy' element={<PrivacyPolicy />} />
       </Route>
