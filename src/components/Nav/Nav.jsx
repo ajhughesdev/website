@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence } from 'framer-motion'
 
 import NavBar from './NavBar/NavBar'
@@ -7,7 +6,7 @@ import NavScreen from './NavScreen/NavScreen'
 import css from './nav.module.css'
 
 const Nav = ({ isInView, navScreenVisible, toggleNavScreen, darkMode, toggleDarkMode }) => {
-   return (
+  return (
     <header className={css.Nav}>
       <NavBar
         isInView={isInView}

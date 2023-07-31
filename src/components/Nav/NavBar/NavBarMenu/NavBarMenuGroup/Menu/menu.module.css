@@ -1,0 +1,28 @@
+.Menu {
+  border-radius: 12px;
+  padding: 12px;
+  min-width: 128px;
+  border: 1px solid var(--c-divider);
+  background-color: var(--c-bg-elv);
+  box-shadow: var(--shadow-3);
+  transition: background-color 500ms;
+  max-height: calc(100svh - var(--nav-height));
+  overflow-y: auto;
+}
+
+.link {
+  display: block;
+  border-radius: 6px;
+  padding: 0 12px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--c-text-1);
+  white-space: nowrap;
+  transition: background-color 250ms, color 250ms;
+
+  &:hover {
+    color: var(--c-brand);
+    background-color: var(--c-bg-elv-mute);
+  }
+}

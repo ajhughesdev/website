@@ -1,0 +1,33 @@
+.link {
+  display: block;
+  border-radius: 6px;
+  padding: 0 12px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--c-text-1);
+  white-space: nowrap;
+  transition: background-color 250ms, color 250ms;
+
+  &:hover {
+    color: var(--c-brand);
+    background-color: var(--c-bg-elv-mute);
+  }
+}
+
+.external-link-icon::after {
+  content: '';
+}
+
+:is(.external-link-icon):after {
+  display: inline-block;
+  margin-top: -1px;
+  margin-left: 4px;
+  width: 11px;
+  height: 11px;
+  background: currentColor;
+  flex-shrink: 0;
+  --icon: url(data:image/svg+xml;base64,CiA8c3ZnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zycgdmlld0JveD0nMCAwIDI0IDI0JyA+PHBhdGggZD0nTTAgMGgyNHYyNEgwVjB6JyBmaWxsPSdub25lJyAvPjxwYXRoIGQ9J005IDV2Mmg2LjU5TDQgMTguNTkgNS40MSAyMCAxNyA4LjQxVjE1aDJWNUg5eicgLz48L3N2Zz4K);
+  -webkit-mask-image: var(--icon);
+  mask-image: var(--icon);
+}

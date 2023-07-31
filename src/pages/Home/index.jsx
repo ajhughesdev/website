@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import avataaar from './../../assets/imgs/avatar.png'
 
@@ -5,6 +6,27 @@ import css from './home.module.css'
 import Features from '../../components/Features/Features'
 
 const Home = () => {
+  const eyes = useRef(null)
+
+  const eyeball = (e) => {
+    const eyesList = eyes.current.children
+    for (let eye of eyesList) {
+      let x = eye.getBoundingClientRect().left + eye.clientWidth / 2
+      let y = eye.getBoundingClientRect().top + eye.clientHeight / 2
+
+      let radian = Math.atan2(e.pageX - x, e.pageY - y)
+      let rotate = radian * (180 / Math.PI) * -1 + 270
+      eye.style.transform = `rotate(${rotate}deg)`
+    }
+  }
+
+  useEffect(() => {
+    document.body.addEventListener('mousemove', eyeball)
+    return () => {
+      document.body.removeEventListener('mousemove', eyeball)
+    }
+  }, [])
+
   return (
     <div className={css.Home}>
       <div className={`${css.Hero} ${css['has-image']} ${css.HomeHero}`}>
@@ -46,6 +68,10 @@ const Home = () => {
                 alt='avatar'
                 className={`${css.Image} ${css['img-src']}`}
               />
+              <div className={css['eyes-container']} ref={eyes}>
+                <div className={css.eyes}></div>
+                <div className={css.eyes}></div>
+              </div>
             </div>
           </div>
         </div>

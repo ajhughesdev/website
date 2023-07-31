@@ -1,0 +1,5 @@
+.MenuGroup {
+    margin: 12px -12px 0;
+    border-block-start: 1px solid var(--c-divider);
+    padding: 12px 12px 0;
+}

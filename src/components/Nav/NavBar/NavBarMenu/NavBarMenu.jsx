@@ -1,4 +1,6 @@
 import NavBarMenuLink from './NavBarMenuLink/NavBarMenuLink'
+import NavBarMenuGroup from './NavBarMenuGroup/NavBarMenuGroup'
+
 import css from './navBarMenu.module.css'
 
 export const links = [
@@ -30,8 +32,9 @@ const NavBarMenu = () => {
       </span>
 
       {links.map((link) => (
-        <NavBarMenuLink to={link.to} key={link.id} text={link.text} />
+        <NavBarMenuLink className={`${css.Link} ${css.link} ${css.NavBarMenuLink}`} to={link.to} key={link.id} text={link.text} />
       ))}
+      <NavBarMenuGroup />
     </nav>
   )
 }

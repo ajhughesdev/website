@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 100 900;
   font-variation-settings: slnt -10 0;
-  font-display: optional;
+  /* font-display: optional; */
 }
 
 @font-face {
