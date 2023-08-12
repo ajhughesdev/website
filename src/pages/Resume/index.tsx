@@ -4,7 +4,11 @@ import qrcode from './../../assets/imgs/linkfree-ajhughesdev.png'
 
 import './resume.css'
 
-const Resume = () => {
+type ResumeProps = {
+  darkMode: boolean
+}
+
+const Resume = ({ darkMode }: ResumeProps) => {
   return (
     <div className='Resume'>
       <div className='body'>
