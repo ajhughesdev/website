@@ -6,7 +6,12 @@ import { useInView } from 'framer-motion'
 import Nav from './components/Nav/Nav'
 import Footer from './components/Footer/Footer'
 
-const RootLayout = ({ darkMode, toggleDarkMode }) => {
+type RootLayoutProps = {
+  darkMode: boolean
+  toggleDarkMode: () => void
+}
+
+const RootLayout = ({ darkMode, toggleDarkMode }: RootLayoutProps) => {
   const [navScreenVisible, setNavScreenVisible] = useState(false)
   const ref = useRef(null)
   const isInView = useInView(ref)
