@@ -1,10 +1,9 @@
 import { useRef, useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import { useInView } from 'framer-motion'
-// import { Adsense } from '@ctrl/react-adsense'
 
-import Nav from './components/Nav/Nav'
-import Footer from './components/Footer/Footer'
+import Nav from '../components/Nav/Nav'
+import Footer from '../components/Footer/Footer'
 
 type RootLayoutProps = {
   darkMode: boolean
@@ -13,7 +12,7 @@ type RootLayoutProps = {
 
 const RootLayout = ({ darkMode, toggleDarkMode }: RootLayoutProps) => {
   const [navScreenVisible, setNavScreenVisible] = useState(false)
-  const ref = useRef(null)
+  const ref = useRef<HTMLSpanElement>(null)
   const isInView = useInView(ref)
   const isHome = window.location.pathname === '/'
 
