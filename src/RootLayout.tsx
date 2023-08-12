@@ -22,7 +22,7 @@ const RootLayout = ({ darkMode, toggleDarkMode }: RootLayoutProps) => {
   return (
     <div className={`Layout ${navScreenVisible ? 'no-overscroll' : ''}`}>
       <span ref={ref}></span>
-      <span tabIndex='-1'></span>
+      <span tabIndex={-1}></span>
       <a href='#Content' className='SkipLink visually-hidden'>
         Skip to content
       </a>
