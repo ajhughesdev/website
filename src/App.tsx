@@ -16,11 +16,18 @@ import PrivacyPolicy from './pages/PrivacyPolicy'
 import About from './pages/About/About'
 
 const App = (): JSX.Element => {
-  const prefersDarkMode: boolean = window.matchMedia('(prefers-color-scheme: dark)').matches
-  const storedIsDark: string | null = localStorage.getItem('ajhughes.dev-prefers-darktheme')
-  const initialIsDark: boolean = storedIsDark !== null ? JSON.parse(storedIsDark) : prefersDarkMode
+  const prefersDarkMode: boolean = window.matchMedia(
+    '(prefers-color-scheme: dark)'
+  ).matches
+  const storedIsDark: string | null = localStorage.getItem(
+    'ajhughes.dev-prefers-darktheme'
+  )
+  const initialIsDark: boolean =
+    storedIsDark !== null ? JSON.parse(storedIsDark) : prefersDarkMode
   const [darkMode, setDarkMode] = useState<boolean>(initialIsDark)
-  const html: React.RefObject<HTMLHtmlElement> = useRef<HTMLHtmlElement>(document.querySelector('html'))
+  const html: React.RefObject<HTMLHtmlElement> = useRef<HTMLHtmlElement>(
+    document.querySelector('html')
+  )
 
   const toggleDarkMode: () => void = (): void => {
     setDarkMode(!darkMode)
