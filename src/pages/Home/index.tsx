@@ -2,7 +2,11 @@
 
 import React from 'react';
 
-const Home = () => {
+interface HomeProps {
+  // Define prop types here
+}
+
+const Home: React.FC<HomeProps> = () => {
   // Add your JSX code here
   return (
     <div>
@@ -12,5 +16,5 @@ const Home = () => {
   );
 };
 
-export
+export default Home;
 
